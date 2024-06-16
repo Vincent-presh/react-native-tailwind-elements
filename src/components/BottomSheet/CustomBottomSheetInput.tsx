@@ -3,9 +3,9 @@ import {
   type TextInputProps,
   type StyleProp,
   type TextStyle,
+  TextInput,
 } from 'react-native';
 import { useBottomSheetInternal } from '@gorhom/bottom-sheet'; // Assuming you're using @gorhom/bottom-sheet
-import { TextInput as CommonTextInput } from 'react-native-gesture-handler';
 
 interface BottomSheetInputProps extends TextInputProps {
   setText: React.Dispatch<React.SetStateAction<string>>; // Function to set the text
@@ -53,7 +53,7 @@ const BottomSheetInput: React.FC<BottomSheetInputProps> = ({
   );
 
   return (
-    <CommonTextInput
+    <TextInput
       placeholder={placeholder}
       textAlignVertical="center"
       placeholderTextColor="#68698D"
