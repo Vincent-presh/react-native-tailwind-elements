@@ -24,7 +24,7 @@ const styles = {
 
   // Search Inputs
   searchInput:
-    'border border-accent rounded-full bg-accent text-base text-[#9D9EBA] dark:text-light h-12 font-Outfit leading-5',
+    'border border-accent rounded-full bg-accent text-base text-dark dark:text-light h-12 font-Outfit leading-5',
 };
 
 export { styles };
