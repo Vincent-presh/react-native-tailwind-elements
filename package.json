@@ -70,6 +70,7 @@
     "react-native": "0.74.2",
     "react-native-builder-bob": "^0.23.2",
     "release-it": "^15.0.0",
+    "tailwindcss": "3.3.2",
     "typescript": "^5.2.2"
   },
   "resolutions": {
@@ -150,5 +151,9 @@
       "module",
       "typescript"
     ]
+  },
+  "dependencies": {
+    "nativewind": "^2.0.11",
+    "react-native-feather": "^1.1.2"
   }
 }
