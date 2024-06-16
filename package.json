@@ -1,6 +1,6 @@
 {
-  "name": "react-native-ui-elements",
-  "version": "0.1.0",
+  "name": "react-native-tailwind-elements",
+  "version": "0.0.01",
   "description": "A comprehensive collection of customizable UI components for React Native, including various TextInputs, Buttons with loader states, Bottom Sheets, and Tailwind CSS support via NativeWind. Simplify and enhance your mobile app development with seamless and stylish elements.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -26,7 +26,6 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-ui-elements-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -41,14 +40,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vincent-presh/react-native-ui-elements.git"
+    "url": "git+https://github.com/Vincent-presh/react-native-tailwind-elements.git"
   },
   "author": "Vincent precious <5tcentunary@gmail.com> (https://github.com/Vincent-presh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Vincent-presh/react-native-ui-elements/issues"
+    "url": "https://github.com/Vincent-presh/react-native-tailwind-elements/issues"
   },
-  "homepage": "https://github.com/Vincent-presh/react-native-ui-elements#readme",
+  "homepage": "https://github.com/Vincent-presh/react-native-tailwind-elements#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

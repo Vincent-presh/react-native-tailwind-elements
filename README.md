@@ -1,17 +1,17 @@
-# react-native-ui-elements
+# react-native-tailwind-elements
 
 A comprehensive collection of customizable UI components for React Native, including various TextInputs, Buttons with loader states, Bottom Sheets, and Tailwind CSS support via NativeWind. Simplify and enhance your mobile app development with seamless and stylish elements.
 
 ## Installation
 
 ```sh
-npm install react-native-ui-elements
+npm install react-native-tailwind-elements
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-ui-elements';
+import { multiply } from 'react-native-tailwind-elements';
 
 // ...
 
