@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { memo } from 'react';
 import {
   TextInput as RNTextInput,
@@ -26,25 +27,26 @@ const TextInput: React.FC<TextInputProps & TextInputPropsWithTW> = ({
   isPassword,
   ...props
 }) => {
-  const inputStyles = type == 'input' ? styles.input : styles.searchInput;
+  const inputStyles = type === 'input' ? styles.input : styles.searchInput;
 
   return (
     <View
       className={
-        type == 'input'
+        type === 'input'
           ? 'relative'
           : inputStyles + ' dark:bg-transparent flex flex-row items-center px-2'
       }
     >
-      {type == 'input' ? null : (
+      {type === 'input' ? null : (
         <Search className="text-light p-3 m-2 h-4 w-4"></Search>
       )}
       <RNTextInput
         className={
-          type == 'input'
+          type === 'input'
             ? inputStyles + ' px-4 '
             : 'h-12 flex-1 font-Outfit text-dark dark:text-light'
         }
+        // eslint-disable-next-line react-native/no-inline-styles
         style={{
           fontFamily: 'Outfit',
         }}
@@ -57,14 +59,14 @@ const TextInput: React.FC<TextInputProps & TextInputPropsWithTW> = ({
             onPress={() => {
               setShowPassword(!showPassword);
             }}
-          ></Eye>
+          />
         ) : (
           <EyeOff
             className="text-[#68698D] absolute right-0 p-5 mx-3 my-5 h-100"
             onPress={() => {
               setShowPassword(!showPassword);
             }}
-          ></EyeOff>
+          />
         ))}
     </View>
   );
