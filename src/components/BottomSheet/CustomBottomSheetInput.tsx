@@ -1,7 +1,11 @@
 import React, { useCallback, useEffect } from 'react';
-import { TextInputProps, StyleProp, TextStyle } from 'react-native';
+import {
+  type TextInputProps,
+  type StyleProp,
+  type TextStyle,
+} from 'react-native';
 import { useBottomSheetInternal } from '@gorhom/bottom-sheet'; // Assuming you're using @gorhom/bottom-sheet
-import CommonTextInput from './CommonTextInput'; // Assuming CommonTextInput is your custom TextInput component
+import { TextInput as CommonTextInput } from 'react-native-gesture-handler';
 
 interface BottomSheetInputProps extends TextInputProps {
   setText: React.Dispatch<React.SetStateAction<string>>; // Function to set the text
@@ -29,7 +33,7 @@ const BottomSheetInput: React.FC<BottomSheetInputProps> = ({
   }, [shouldHandleKeyboardEvents]);
 
   const handleOnFocus = useCallback(
-    (args) => {
+    (args: any) => {
       shouldHandleKeyboardEvents.value = true;
       if (onFocus) {
         onFocus(args);
@@ -39,7 +43,7 @@ const BottomSheetInput: React.FC<BottomSheetInputProps> = ({
   );
 
   const handleOnBlur = useCallback(
-    (args) => {
+    (args: any) => {
       shouldHandleKeyboardEvents.value = false;
       if (onBlur) {
         onBlur(args);
@@ -56,9 +60,10 @@ const BottomSheetInput: React.FC<BottomSheetInputProps> = ({
       multiline={true}
       onFocus={handleOnFocus}
       onBlur={handleOnBlur}
-      onChangeText={(text) => {
+      onChangeText={(text: string) => {
         setText(text);
       }}
+      // eslint-disable-next-line react-native/no-inline-styles
       style={[{ fontFamily: 'Outfit' }, inputStyle]}
       {...restProps}
     />

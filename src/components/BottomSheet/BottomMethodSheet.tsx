@@ -19,14 +19,14 @@ const BottomMethodSheet: React.FC<BottomMethodSheetProps> = ({
   backgroundColor = '#00000070', // Default background color
 }) => {
   let height = Dimensions.get('window').height - 30;
-  const snapPoints = useMemo(() => [height], []);
+  const snapPoints = useMemo(() => [height], [height]);
   const reducedMotion = useReducedMotion();
   const handleSheetChanges = useCallback(() => {}, []);
   const animationConfigs = useBottomSheetTimingConfigs({
     duration: 100,
     easing: Easing.cubic,
   });
-  const renderBackdrop = (prop) => (
+  const renderBackdrop = (prop: any) => (
     <BottomSheetBackdrop
       {...prop}
       pressBehavior={0}
