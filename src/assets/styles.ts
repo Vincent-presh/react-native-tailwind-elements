@@ -25,6 +25,9 @@ const styles = {
   // Search Inputs
   searchInput:
     'border border-accent rounded-full bg-accent text-base text-dark dark:text-light h-12 font-Outfit leading-5',
+
+  iconLight: 'text-dark h-4 w-4',
+  iconDark: 'text-white h-4 w-4',
 };
 
 export { styles };

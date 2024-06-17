@@ -110,6 +110,49 @@ const App = () => {
 export default App;
 ```
 
+# Icon Component
+
+The `Icon` component allows you to use icons from the `react-native-feather` library, with support for dynamic imports, dark mode, and custom styles.
+
+# Props
+
+- **`name`** (string): The name of the icon. This should match the name of an icon in the `react-native-feather` library.
+- **`size`** (number, optional): The size of the icon. Default is `24`.
+- **`customStyles`** (string, optional): Additional custom styles to apply to the icon.
+
+# Usage Example
+
+```typescript
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import Icon from './Icon'; // Adjust the path as necessary
+
+const MyComponent = () => {
+  return (
+    <View style={styles.container}>
+      <Icon
+        name="Menu"
+        size={30}
+        customStyles="p-2 bg-gray-200 rounded"
+        onPress={() => {
+          console.log('Menu icon pressed');
+        }}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+export default MyComponent;
+```
+
 ## Colors for Tailwind Configuration
 
 The `styles` object provided in the project relies on specific color classes defined in Tailwind CSS. Below are the recommended colors to add to your Tailwind configuration to ensure compatibility with the styles:
