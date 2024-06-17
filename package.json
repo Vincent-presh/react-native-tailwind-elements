@@ -1,6 +1,6 @@
 {
   "name": "react-native-tailwind-elements",
-  "version": "0.0.018",
+  "version": "0.0.019",
   "description": "A comprehensive collection of customizable UI components for React Native, including various TextInputs, Buttons with loader states, Bottom Sheets, and Tailwind CSS support via NativeWind. Simplify and enhance your mobile app development with seamless and stylish elements.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
