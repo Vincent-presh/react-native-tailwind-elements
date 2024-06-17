@@ -125,7 +125,7 @@ The `Icon` component allows you to use icons from the `react-native-feather` lib
 ```typescript
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Icon from './Icon'; // Adjust the path as necessary
+import { Icon } from 'react-native-tailwind-elements';
 
 const MyComponent = () => {
   return (
@@ -207,7 +207,7 @@ The `BottomSheet` component provides a customizable bottom sheet modal for displ
 
 ```typescript
 import React, { useRef } from 'react';
-import BottomSheet from './BottomSheet';
+import { BottomSheet } from 'react-native-tailwind-elements';
 
 const MyComponent = () => {
   const bottomSheetRef = useRef<BottomSheetModal>(null);
@@ -263,7 +263,7 @@ The `BottomSheetInput` component provides a text input with enhanced focus handl
 ```typescript
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import BottomSheetInput from './BottomSheetInput';
+import { BottomSheetInput } from 'react-native-tailwind-elements';
 
 const MyComponent = () => {
   const [review, setReview] = useState('');
